@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../static/css/bank/sidebar.css" />
+    <link rel="stylesheet" href="../../../static/css/bank/login/style.css" />
+    <script src="../../../static/javascript/bank/login/check_login_info.js"></script>
+    <script src="../../../static/javascript/bank/login/login.js"></script>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="side-bar">
+        <div class="logo">
+          <a class="side-bar-logo-link" href="../../../index.html"
+            ><img src="../../../static/images/bank/bank.png" alt="bank" />
+            <span class="brand-name">SmartBank</span></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="login" id="login">
+          <div class="login-title">Log in</div>
+          <div class="login-body" id="login-body">
+            <div class="login-username" id="login-username">
+              <div class="login-username-title">Username</div>
+              <input
+                type="text"
+                placeholder="username"
+                id="input-login-username"
+              />
+            </div>
+            <div class="login-password" id="login-password">
+              <div class="login-password-title">Password</div>
+              <input
+                type="password"
+                id="input-login-password"
+                placeholder="password"
+                id="input-login-password"
+              />
+            </div>
+            <div class="login-notification" id="login-notification"></div>
+            <button class="login-btn" id="login-btn" onclick="checkLoginInfo()">
+              Log in
+            </button>
+          </div>
+        </div>
+        <div class="signup-link">
+          No account?<a href="signup.html">Sign up here</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

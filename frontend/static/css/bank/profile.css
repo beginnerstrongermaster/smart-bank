@@ -1,0 +1,65 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+.profile {
+  display: flex;
+  height: 12vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content-profile-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.avatar {
+  margin-right: 10px;
+  background-color: lightgray;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid;
+}
+.username-initials {
+  color: black;
+}
+.username {
+  margin-right: 20px;
+  color: black;
+}
+
+.content-showcase-link,
+.content-profile-link,
+.side-bar-icon-link,
+.side-bar-logo-link {
+  text-decoration: none;
+}
+
+.recipients:hover
+  .home:hover
+  .logo:hover
+  .username:hover
+  .avatar:hover
+  .transactions-showall:hover {
+  cursor: pointer;
+}
+
+.logout-link {
+  text-decoration: underline;
+  color: black;
+}
+.logout {
+  padding-right: 10px;
+}

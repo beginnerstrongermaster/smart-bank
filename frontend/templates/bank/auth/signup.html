@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../static/css/bank/sidebar.css" />
+    <link rel="stylesheet" href="../../../static/css/bank/signup/style.css" />
+    <script src="../../../static/javascript/bank/signup/password.js"></script>
+    <script src="../../../static/javascript/bank/signup/signup_info_check.js"></script>
+    <script src="../../../static/javascript/bank/signup/send_signup_info.js"></script>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="side-bar">
+        <div class="logo">
+          <a class="side-bar-logo-link" href="../../../index.html"
+            ><img src="../../../static/images/bank/bank.png" alt="bank" />
+            <span class="brand-name">SmartBank</span></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="signup" id="signup">
+          <div class="signup-title">Sign Up</div>
+          <div class="signup-body" id="signup-body">
+            <div class="signup-username" id="signup-username">
+              <div class="signup-username-title">Username</div>
+              <input
+                type="text"
+                placeholder="username"
+                id="input-signup-username"
+              />
+            </div>
+            <div class="signup-email" id="signup-email">
+              <div class="signup-email-title">Email</div>
+              <input type="text" placeholder="email" id="input-signup-email" />
+            </div>
+            <div class="signup-password" id="signup-password">
+              <div class="signup-password-title">Password</div>
+              <input
+                type="password"
+                id="input-signup-password"
+                placeholder="password"
+                id="input-signup-password"
+              />
+            </div>
+            <div class="signup-confirm-password" id="signup-confirm-password">
+              <div class="signup-confirm-password-title">Confirm Password</div>
+              <input
+                type="password"
+                id="input-signup-confirm-password"
+                placeholder="Confirm password"
+                id="input-signup-confirm-password"
+              />
+            </div>
+            <div class="signup-phone" id="signup-phone">
+              <div class="signup-phone-title">Phone</div>
+              <input type="text" placeholder="phone" id="input-signup-phone" />
+            </div>
+            <button class="signup-btn" onclick="passwordCheck()">
+              Sign up
+            </button>
+          </div>
+        </div>
+        <div class="login-link">
+          Already have an account?<a href="login.html">Log in here</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

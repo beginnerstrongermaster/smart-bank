@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/bank/sidebar.css" />
+    <link rel="stylesheet" href="../../static/css/bank/profile.css" />
+    <link rel="stylesheet" href="../../static/css/bank/body_main_body.css" />
+    <link rel="stylesheet" href="../../static/css/bank/user/style.css" />
+    <script src="../../static/javascript/bank/sidebar_wallet.js"></script>
+    <script src="../../static/javascript/bank/fetch_user.js"></script>
+    <script src="../../static/javascript/bank/user/regions.js"></script>
+    <script src="../../static/javascript/bank/user/fetch_user_info.js"></script>
+    <script src="../../static/javascript/bank/user/region_options.js"></script>
+    <script src="../../static/javascript/bank/user/save_check.js"></script>
+    <script src="../../static/javascript/bank/user/send_save_info.js"></script>
+  </head>
+  <body>
+    <div class="main-body" id="main-body">
+      <div class="side-bar">
+        <div class="logo">
+          <a class="side-bar-logo-link" href="../../index.html"
+            ><img src="../../static/images/bank/bank.png" alt="bank" />
+            <span class="brand-name">SmartBank</span></a
+          >
+        </div>
+        <div class="icon">
+          <div class="home">
+            <a class="side-bar-icon-link" href="home.html"
+              ><img src="../../static/images/bank/home.png" alt="home" />
+              <span class="icon1-description">Home</span></a
+            >
+          </div>
+          <div class="recipients">
+            <a class="side-bar-icon-link" href="recipients.html"
+              ><img src="../../static/images/bank/crowd.png" alt="recipients" />
+              <span class="icon2-description"> Recipients</span></a
+            >
+          </div>
+        </div>
+        <div class="wallet-icon">
+          <a class="wallet-icon-link" href="wallets.html">
+            <img src="../../static/images/bank/wallet.png" alt="wallet-icon" />
+            <span>Wallet</span></a
+          >
+        </div>
+        <div class="wallets" id="wallets"></div>
+      </div>
+      <div class="content">
+        <div class="profile">
+          <a class="content-profile-link" href="user.html">
+            <div class="avatar" id="avatar">
+              <span class="username-initials" id="username-initials">UN</span>
+            </div>
+            <div class="username" id="username">Username</div>
+          </a>
+          <div class="logout">
+            <a class="logout-link" href="auth/logout.html">Logout</a>
+          </div>
+        </div>
+        <div class="showcase">
+          <div class="user-info">
+            <div class="user-auth-info">
+              <div class="first-name">
+                <div class="label">First Name</div>
+                <input
+                  type="text"
+                  class="input-first-name"
+                  placeholder="First name"
+                  id="input-first-name"
+                />
+                <div
+                  class="input-first_name-warning"
+                  id="input-first_name-warning"
+                ></div>
+              </div>
+              <div class="last-name">
+                <div class="label">Last Name</div>
+                <input
+                  type="text"
+                  class="input-last-name"
+                  placeholder="Last name"
+                  id="input-last-name"
+                />
+                <div
+                  class="input-last_name-warning"
+                  id="input-last_name-warning"
+                ></div>
+              </div>
+              <div class="phone">
+                <div class="label">Phone</div>
+                <input
+                  type="text"
+                  class="input-phone"
+                  placeholder="Phone"
+                  id="input-phone"
+                />
+                <div class="input-phone-warning" id="input-phone-warning"></div>
+              </div>
+              <div class="email">
+                <div class="label">Email</div>
+                <input
+                  type="text"
+                  class="input-email"
+                  placeholder="Email"
+                  id="input-email"
+                />
+                <div class="input-email-warning" id="input-email-warning"></div>
+              </div>
+            </div>
+            <div class="user-profile">
+              <div class="select-region">
+                <div class="label">Region</div>
+                <select name="select-regions" id="select-regions">
+                  <option value="null">--select your region--</option>
+                </select>
+              </div>
+              <div class="city">
+                <div class="label">City</div>
+                <input
+                  type="text"
+                  class="input-city"
+                  placeholder="City"
+                  id="input-city"
+                />
+              </div>
+              <div class="address">
+                <div class="label">Address</div>
+                <input
+                  type="text"
+                  class="input-address"
+                  placeholder="Address"
+                  id="input-address"
+                />
+              </div>
+              <div class="birthday">
+                <div class="label">Birthday</div>
+                <input
+                  type="date"
+                  class="input-birthday"
+                  placeholder="YYYY-MM-DD"
+                  id="input-birthday"
+                />
+              </div>
+              <div class="postcode">
+                <div class="label">Postcode</div>
+                <input
+                  type="text"
+                  class="input-postcode"
+                  placeholder="Postcode"
+                  id="input-postcode"
+                />
+              </div>
+            </div>
+            <div class="user-avatar" id="user-avatar">
+              <input id="input-user-avatar" type="file" accept="image/*" />
+              <div class="input-avatar-warning" id="input-avatar-warning"></div>
+            </div>
+          </div>
+          <div class="info-save">
+            <button
+              class="info-save-btn"
+              id="info-save-btn"
+              onclick="saveInfoCheck()"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

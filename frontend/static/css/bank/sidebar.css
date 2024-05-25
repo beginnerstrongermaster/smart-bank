@@ -1,0 +1,55 @@
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  padding-left: 10px;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+.brand-name {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: x-large;
+  color: black;
+}
+.home {
+  margin-bottom: 25px;
+}
+.recipients {
+  margin-bottom: 50px;
+}
+
+.icon1-description,
+.icon2-description {
+  color: black;
+}
+.wallet-icon {
+}
+.wallet-icon-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.wallets {
+  display: flex;
+  flex-direction: column;
+}
+.wallets > * {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content-showcase-link,
+.content-profile-link,
+.side-bar-icon-link,
+.side-bar-logo-link {
+  text-decoration: none;
+}

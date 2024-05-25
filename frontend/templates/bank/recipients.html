@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/bank/recipients/style.css" />
+    <link rel="stylesheet" href="../../static/css/bank/sidebar.css" />
+    <link rel="stylesheet" href="../../static/css/bank/profile.css" />
+    <link rel="stylesheet" href="../../static/css/bank/body_main_body.css" />
+    <script src="../../static/javascript/bank/sidebar_wallet.js"></script>
+    <script src="../../static/javascript/bank/fetch_user.js"></script>
+    <script src="../../static/javascript/bank/recipients/search.js"></script>
+    <script src="../../static/javascript/bank/recipients/transfer_window.js"></script>
+    <script src="../../static/javascript/bank/recipients/transfer.js"></script>
+  </head>
+  <body>
+    <div class="main-body" id="main-body">
+      <div class="side-bar">
+        <div class="logo">
+          <a class="side-bar-logo-link" href="../../index.html"
+            ><img src="../../static/images/bank/bank.png" alt="bank" />
+            <span class="brand-name">SmartBank</span></a
+          >
+        </div>
+        <div class="icon">
+          <div class="home">
+            <a class="side-bar-icon-link" href="home.html"
+              ><img src="../../static/images/bank/home.png" alt="home" />
+              <span class="icon1-description">Home</span></a
+            >
+          </div>
+          <div class="recipients">
+            <a class="side-bar-icon-link" href="recipients.html"
+              ><img src="../../static/images/bank/crowd.png" alt="recipients" />
+              <span class="icon2-description"> Recipients</span></a
+            >
+          </div>
+        </div>
+        <div class="wallet-icon">
+          <a class="wallet-icon-link" href="wallets.html">
+            <img src="../../static/images/bank/wallet.png" alt="wallet-icon" />
+            <span>Wallet</span></a
+          >
+        </div>
+        <div class="wallets" id="wallets"></div>
+      </div>
+      <div class="content">
+        <div class="profile">
+          <a class="content-profile-link" href="user.html">
+            <div class="avatar" id="avatar">
+              <span class="username-initials" id="username-initials">UN</span>
+            </div>
+            <div class="username" id="username">Username</div>
+          </a>
+          <div class="logout">
+            <a class="logout-link" href="auth/logout.html">Logout</a>
+          </div>
+        </div>
+        <div class="showcase" id="showcase">
+          <div class="recipient-title">Recipients</div>
+          <div class="recipients-search">
+            <div class="recipients-search-bar">
+              <img
+                src="../../static/images/bank/search/search.png"
+                alt="serach"
+              />
+              <input
+                id="input-email-phone"
+                class="search-frame"
+                type="text"
+                placeholder="Email,Phone"
+              />
+            </div>
+            <button class="search-btn" onclick="searchRecipient()">
+              Search Recipient
+            </button>
+          </div>
+          <div id="search-result" class="search-result"></div>
+          <div id="transfer-area" class="transfer-area"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+.transactions {
+  width: 100%;
+}
+.transactions-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 15px;
+}
+.transactions-title {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: larger;
+}
+.transactions-showall {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: black;
+}
+
+.transactions-records {
+  margin-top: 30px;
+  min-height: 75px;
+  display: flex;
+  flex-direction: column;
+}
+.transactions-records > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  min-height: 50px;
+}
+.sender,
+.receiver,
+.amount,
+.currency {
+  display: flex;
+  align-items: center;
+}
+.sender,
+.receiver {
+  flex-direction: row;
+}
+
+.sender-avatar,
+.receiver-avatar {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 20px;
+}

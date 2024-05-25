@@ -1,0 +1,49 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user-auth-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-auth-info > *,
+.user-profile > * {
+  margin-bottom: 50px;
+}
+
+.info-save {
+  display: flex;
+  justify-content: center;
+}
+
+.info-save-btn {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+}
+.info-save-btn:hover {
+  cursor: pointer;
+}
+
+.warning-text {
+  color: red;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.user-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
